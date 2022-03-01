@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title> ALTHEA WEBSITE </title> 
+	
+	  <link rel="shortcut icon" href="images/love.jpeg">
+	
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="structure.css" />
+	<link rel="stylesheet" href="slider.css" />
+	
+	<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet'>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	
+</head> 
+
+<body>
+	
+	
+	
+	<!-- TITLE -->
+	
+	<div id="text1">
+		<p> ALTHEA </p>
+	</div>
+	
+	<!-- BREADCRUMBS -->
+	<ul>
+	  <li><a class="index.html" href="#home" id="text4">HOME</a></li>
+	  <li><a href="sales.html" id="text3">SALES</a></li>
+	  <li><a href="tops.html">TOPS</a></li>
+	  <li><a href="bottoms.html">BOTTOMS</a></li>
+	  <li><a href="dresses.html">DRESSES</a></li>
+	  <li><a href="outerwear.html">OUTERWEAR</a></li>
+	  <li><a href="accessories.html">ACCESSORIES</a></li>
+	  <li><a href="about.html">ABOUT</a></li>
+	  <li><a href="contact.html">CONTACT US</a></li>
+	
+	</ul>
+		
+	<!-- BANNER -->
+	<div id="slideshow">
+		<div class="slideshow-container">
+			
+		<div class="mySlides fade">
+		
+		<img src="images/banner2.jpeg" id="gambar"> 
+	</div>
+	
+	    <div class="mySlides fade">
+		
+		<img src="images/banner.jpeg" id="gambar">
+	</div>
+	<br>
+	
+	    <div style="text-align:center">
+		  <span class="dot"></span>
+		  <span class="dot"></span>
+		</div>
+		
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+        </script> 
+
+
+   <!-- TRENDING SECTION -->
+   
+   <div id=”trend”>
+   	<h2>TRENDING</h2>
+   </div>
+
+   <!-- IMAGE BOX -->
+   
+   <div id="containertrending">
+     <div class="container" style="width:21%; float:left; padding:2%;">
+      <img src="images/top1.jpeg" id="gambar"  class="image"/>
+      <div class="middle">
+         <div class="text" id="name">Ribbed Long Sleeves Top</div> 
+		 <p class="price">RM 35</p>
+		 <p><button>Add to Cart</button></p>
+      </div>
+     </div>
+     
+     <div class="container" style="width:21%; float:left; padding:2%;" >
+     <img src="images/top3.jpeg" id="gambar" class="image"/>
+     <div class="middle">
+         <div class="text" id="name">Swirl Print Shirt</div>
+ 		 <p class="price">RM 50</p>
+ 		 <p><button>Add to Cart</button></p>
+      </div>
+   </div>
+     
+     <div class="container" style="width:21%; float:right; padding:2%;" >
+     <img src="images/dress7.jpeg" id="gambar" class="image" />
+     <div class="middle">
+         <div class="text" id="name">Cowl Neck Slip Dress</div>
+ 		 <p class="price">RM 70</p>
+ 		 <p><button>Add to Cart</button></p>
+      </div>
+   </div>
+     
+       <div class="container" style="width:21%; float:right; padding:2%;" >
+       <img src="images/outerwear2.jpeg" id="gambar" class="image" />
+       <div class="middle">
+           <div class="text" id="name">Jacquard-Knit Cardigan</div>
+ 		 <p class="price">RM 115</p>
+ 		 <p><button>Add to Cart</button></p>
+        </div>
+     </div>
+ </div>
+ 
+	
+	<!---------------------------------------------------------------------------------- BOX ------------------------------------------------------------------------------------------->
+	
+		
+     <div id=”trend”>
+     	<h2>SHOP BY CATEGORY</h2>
+     </div>
+		
+		  <!--1 SLIDE-->
+  
+		            
+				  	<div id="center" style="width:18%; float:left; padding:1%;" >
+				  	<div class="box10">
+				  	<div class="slide-img"> 
+				  	   <img src="images/top.jpeg" alt="10">
+	   
+				  	   <!-- OVERLAY -->
+				  	         <div class="overlay">
+	   
+				  	   <!-- SHOP BUTTON -->
+				  	         <a href="tops.html" class="shop-btn"> TOPS </a>
+				  	   </div>
+				     </div>
+				 </div>
+			 </div>
+		 
+		
+				  	   <!-- DETAIL BOX UNDER IMG -->
+				  	
+				  
+		 
+		  
+		  <!--2 SLIDE-->
+		
+				  	<div id="center" style="width:18%; float:left; padding:1%;">
+				  	<div class="box10">
+				  	<div class="slide-img"> 
+				  	   <img src="images/bottom.jpeg" alt="11">
+	   
+				  	   <!-- OVERLAY -->
+				  	         <div class="overlay">
+	   
+				  	   <!-- SHOP BUTTON -->
+				  	         <a href="bottoms.html" class="shop-btn"> BOTTOMS </a>
+				  	   </div>
+				     </div>				  	
+				  </div>
+			  </div>
+		 
+		  
+		  <!--3 SLIDE-->
+	
+				  	<div id="center" style="width:18%; float:left; padding:1%;">
+				  	<div class="box10">
+				  	<div class="slide-img"> 
+				  	   <img src="images/outerwear.jpeg" alt="12">
+	   
+				  	   <!-- OVERLAY -->
+				  	         <div class="overlay">
+	   
+				  	   <!-- SHOP BUTTON -->
+				  	         <a href="outerwear.html" class="shop-btn"> OUTERWEAR </a>
+				  	   </div>
+				     </div>
+				  </div>
+			  </div>
+		
+		  
+		  <!--4 SLIDE-->
+	
+				  	<div id="center" style="width:18%; float:left; padding:1%;">
+				  	<div class="box10">
+				  	<div class="slide-img"> 
+				  	   <img src="images/shoes.jpeg" alt="13">
+	   
+				  	   <!-- OVERLAY -->
+				  	         <div class="overlay">
+	   
+				  	   <!-- SHOP BUTTON -->
+				  	         <a href="accessories.html" class="shop-btn"> ACCESSORIES </a>
+				  	   </div>
+				     </div>
+				  </div>
+			  </div>
+		 
+		  
+		  <!--5 SLIDE-->
+		 
+				  	<div id="center" style="width:18%; float:left; padding:1%;">
+				  	<div class="box10">
+				  	<div class="slide-img"> 
+				  	   <img src="images/dress.jpeg" alt="14">
+	   
+				  	   <!-- OVERLAY -->
+				  	         <div class="overlay">
+	   
+				  	   <!-- SHOP BUTTON -->
+				  	         <a href="dresses.html" class="shop-btn"> DRESS </a>
+							
+				  	   </div>
+				     </div>
+				  </div>
+			  </div>
+	
+    <!--------------------------------------------------------------------------- TAGGING ------------------------------------------------------------------------------>
+
+    <div id=”tagging”>
+		<h2 >_</h2>
+    	<h2 >#altheababes</h2>
+		<p class="caption"> We LOVE to see how your amazing style!</p> 
+		<p class="caption"> Tag us @althea.my on Instagram to share your amazing style #altheababes </p>
+    </div>
+	
+	 
+			  	<div id="center" style="width:18%; float:left; padding:1%;" >
+			  	<div class="box11">
+					<div class="slide-img"> 
+			  	   <img src="images/tag1.jpeg">
+				   
+   
+			  	   <!-- OVERLAY -->
+			  	         <div class="overlay"> <p class="username"> @zannaaziz__ </p>
+			  	   </div>
+			     </div>
+			 </div>
+		 </div>
+	
+	
+				  	<div id="center" style="width:18%; float:left; padding:1%;" >
+				  	<div class="box11">
+						<div class="slide-img"> 
+				  	   <img src="images/tag2.jpeg">
+   
+				  	   <!-- OVERLAY -->
+				  	         <div class="overlay"> <p class="username"> @fyraalyahya </p>
+				  	   </div>
+				     </div>
+				 </div>
+			 </div>
+			 
+				  	<div id="center" style="width:18%; float:left; padding:1%;" >
+				  	<div class="box11">
+						<div class="slide-img"> 
+				  	   <img src="images/tag3.jpeg">
+   
+				  	   <!-- OVERLAY -->
+				  	         <div class="overlay"> <p class="username"> @athiraaibrahim </p>
+				  	   </div>
+				     </div>
+				 </div>
+			 </div>
+			 
+				  	<div id="center" style="width:18%; float:left; padding:1%;" >
+				  	<div class="box11">
+						<div class="slide-img"> 
+				  	   <img src="images/tag4.jpeg">
+   
+				  	   <!-- OVERLAY -->
+				  	         <div class="overlay"> <p class="username"> @melaniecharles </p>
+				  	   </div>
+				     </div>
+				 </div>
+			 </div>
+			 
+				  	<div id="center" style="width:18%; float:left; padding:1%;" >
+				  	<div class="box11">
+						<div class="slide-img"> 
+				  	   <img src="images/tag5.jpeg">
+   
+				  	   <!-- OVERLAY -->
+				  	         <div class="overlay"> <p class="username"> @_mairahadid </p>
+				  	   </div>
+				     </div>
+				 </div>
+			 </div>
+			 
+			 
+
+	
+	
+								  	<div id="center" style="width:18%; float:left; padding:1%;" >
+								  	<div class="box11">
+										<div class="slide-img"> 
+								  	   <img src="images/tag6.jpeg">
+   
+								  	   <!-- OVERLAY -->
+								  	         <div class="overlay"> <p class="username"> @thebusyraaa </p>
+								  	   </div>
+								     </div>
+								 </div>
+							 </div>
+			 
+								  	<div id="center" style="width:18%; float:left; padding:1%;" >
+								  	<div class="box11">
+										<div class="slide-img"> 
+								  	   <img src="images/tag7.jpeg">
+   
+								  	   <!-- OVERLAY -->
+								  	         <div class="overlay"> <p class="username"> @thebusyraaa </p>
+								  	   </div>
+								     </div>
+								 </div>
+							 </div>
+			 
+								  	<div id="center" style="width:18%; float:left; padding:1%;" >
+								  	<div class="box11">
+										<div class="slide-img"> 
+								  	   <img src="images/tag8.jpeg">
+   
+								  	   <!-- OVERLAY -->
+								  	         <div class="overlay"> <p class="username"> @mysaramahmood </p>
+								  	   </div>
+								     </div>
+								 </div>
+							 </div>
+			 
+								  	<div id="center" style="width:18%; float:left; padding:1%;" >
+								  	<div class="box11">
+										<div class="slide-img"> 
+								  	   <img src="images/tag9.jpeg">
+   
+								  	   <!-- OVERLAY -->
+								  	         <div class="overlay"> <p class="username"> @flintsunn__ </p>
+								  	   </div>
+								     </div>
+								 </div>
+							 </div>
+	
+							  				  	<div id="center" style="width:18%; float:left; padding:1%;" >
+							  				  	<div class="box11">
+							  						<div class="slide-img"> 
+							  				  	   <img src="images/tag10.jpeg">
+   
+							  				  	   <!-- OVERLAY -->
+							  				  	         <div class="overlay"> <p class="username"> @tasneem.binali </p>
+							  				  	   </div>
+							  				     </div>
+							  				 </div>
+							  			 </div>
+	
+	
+	
+	
+	<div id ="footer" style="width:90%; float:left;">
+		GET 20% OFF YOUR FIRST ORDER : <u>ALTHEABABES</u>
+	</div>
+	<div id ="footer2" style="width:98%; float:left;">
+		@2022 ALTHEA by Adriana Zainol
+	</div>
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

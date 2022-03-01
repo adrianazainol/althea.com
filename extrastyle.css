@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS DOCUMENT */
+
+h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F2BDBD;
+	font-size:14px;
+
+}
+
+#footer2
+{
+	background-color:#EF5A6A;
+	color:#FFF;
+	text-align:center;
+	font-size:15px;
+	
+	padding:1%;
+	width:100%;
+	
+}
+
+#text1
+{
+	background-color:#F2DCE0;
+	font-family: 'Chango';font-size: 60px;
+	color:#D9838A;
+	text-align:center;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 500px) {
+.text, .text3, #text1, #text2, h1 {font-size: 2vw;}
+}
